@@ -4,7 +4,7 @@ define('DATABASE_HOST', 'localhost');
 define('DATABASE_PORT', '5432');
 define('DATABASE_NAME', 'krnr');
 
-define('SITE_BRAND', 'RaW 1251AM');
+define('SITE_BRAND', 'YOUR_BRAND_HERE');
 
 $root = explode('/', $_SERVER['DOCUMENT_ROOT']);
 $dir = explode('/', substr(__DIR__,0,-8));

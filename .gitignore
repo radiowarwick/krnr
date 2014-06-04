@@ -1,2 +1,2 @@
-.htaccess.template
-includes/config.php.template
+.htaccess
+includes/config.php

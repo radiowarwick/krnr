@@ -1,0 +1,13 @@
+php_value include_path /var/www/krnr/includes
+php_value auto_prepend_file "config.php"
+
+AuthName "Krnr Documentation System"
+AuthType Basic
+AuthBasicProvider "ldap"
+AuthLDAPURL ldap://ldapserver:389/ou=People,dc=ldapserver,dc=com?uid
+require ldap-attribute ou=krnr_users
+require ldap-user
+
+order deny,allow
+deny from all
+allow from all
